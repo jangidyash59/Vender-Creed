@@ -1,0 +1,5 @@
+Cluster,Cluster_Name,Customer_Count,Share_%,Standout_Feature,Marketing_Strategy
+0,Standard / Low-Engagement Base,1770,58.4,Below-average across most segments; low revenue & volume buckets,Re-engagement campaigns; entry-level lease promotions; educational webinars on product benefits to increase adoption.
+1,High-Volume Competitive Accounts,455,15.0,Highest Volume_Segment & Competitiveness_Flag -- large accounts in contested markets,"Competitive retention: loyalty discounts, dedicated account managers, custom SLA packages to lock in before competitors."
+2,Lean High-Margin Accounts,441,14.6,"High Profit_Bucket relative to Casino_Size -- efficient, profitable smaller venues",'Benefits Bonanza' loyalty programme; premium machine upgrades; upsell higher-class machines to sustain margin growth.
+3,High-Growth Potential Early Adopters,364,12.0,High EA_Segment & Market_Potential_Segment -- low current share but high headroom,Increased marketing spend; pilot new machine classes first; flexible lease incentives to encourage trial and capture growth.
