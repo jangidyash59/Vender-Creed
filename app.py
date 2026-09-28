@@ -334,10 +334,10 @@ if page == "🏠 Overview":
     ax.set_ylabel("PC2", color="#64748b", fontsize=10)
     ax.tick_params(colors="#475569")
     for spine in ax.spines.values():
-        spine.set_edgecolor("rgba(99,102,241,0.2)")
+        spine.set_edgecolor((0.388, 0.400, 0.945, 0.2))
     ax.set_title("", color="#e2e8f0")
     legend = ax.legend(loc="upper right", fontsize=8, framealpha=0.15,
-                       facecolor="#1e2235", edgecolor="rgba(99,102,241,0.3)",
+                       facecolor="#1e2235", edgecolor=(0.388, 0.400, 0.945, 0.3),
                        labelcolor="#cbd5e1")
     fig.tight_layout()
     st.pyplot(fig)
@@ -389,7 +389,7 @@ elif page == "🔬 EDA & Data Quality":
                                   for v in miss_df["Missing %"]])
             ax.set_xlabel("Missing %", color="#64748b")
             ax.tick_params(colors="#94a3b8", labelsize=9)
-            for spine in ax.spines.values(): spine.set_edgecolor("rgba(99,102,241,0.15)")
+            for spine in ax.spines.values(): spine.set_edgecolor((0.388, 0.400, 0.945, 0.15))
             ax.set_title("Missing Value Rate per Column", color="#e2e8f0", fontsize=11, fontweight="bold")
             ax.invert_yaxis()
             fig.tight_layout()
@@ -463,9 +463,9 @@ elif page == "📊 Cluster Explorer":
         ax.set_xlabel("PC1", color="#64748b", fontsize=10)
         ax.set_ylabel("PC2", color="#64748b", fontsize=10)
         ax.tick_params(colors="#475569")
-        for spine in ax.spines.values(): spine.set_edgecolor("rgba(99,102,241,0.15)")
+        for spine in ax.spines.values(): spine.set_edgecolor((0.388, 0.400, 0.945, 0.15))
         ax.legend(fontsize=8, framealpha=0.15, facecolor="#1e2235",
-                  edgecolor="rgba(99,102,241,0.3)", labelcolor="#cbd5e1")
+                  edgecolor=(0.388, 0.400, 0.945, 0.3), labelcolor="#cbd5e1")
         ax.set_title(f"PCA 2D Projection — {var:.1f}% variance explained",
                      color="#e2e8f0", fontsize=11, fontweight="bold")
         fig.tight_layout()
@@ -488,7 +488,7 @@ elif page == "📊 Cluster Explorer":
     ax2.set_xticklabels([f"C{c}\n{CLUSTER_SHORT[c]}" for c in range(4)],
                         color="#94a3b8", fontsize=8)
     ax2.tick_params(axis="y", colors="#475569")
-    for spine in ax2.spines.values(): spine.set_edgecolor("rgba(99,102,241,0.1)")
+    for spine in ax2.spines.values(): spine.set_edgecolor((0.388, 0.400, 0.945, 0.1))
     ax2.set_title("Customer Count per Cluster", color="#e2e8f0", fontsize=11, fontweight="bold")
     ax2.set_ylim(0, cluster_counts.max() * 1.2)
     fig2.tight_layout()
@@ -576,7 +576,7 @@ elif page == "🎯 Cluster Profiles":
                 ax.tick_params(colors="#475569")
                 ax.set_title(f"Cluster {c} vs Global Average",
                              color="#e2e8f0", fontsize=10, fontweight="bold", pad=18)
-                ax.spines["polar"].set_edgecolor("rgba(99,102,241,0.2)")
+                ax.spines["polar"].set_edgecolor((0.388, 0.400, 0.945, 0.2))
                 ax.set_facecolor("#0d0f1a")
 
                 patches = [
@@ -648,7 +648,7 @@ elif page == "📈 K Selection":
             ax.tick_params(colors="#475569", labelsize=8)
             ax.legend(fontsize=7.5, framealpha=0.1, facecolor="#1e2235",
                       edgecolor="none", labelcolor="#cbd5e1")
-            for spine in ax.spines.values(): spine.set_edgecolor("rgba(99,102,241,0.1)")
+            for spine in ax.spines.values(): spine.set_edgecolor((0.388, 0.400, 0.945, 0.1))
             fig.tight_layout()
             st.pyplot(fig); plt.close()
 
@@ -712,7 +712,7 @@ elif page == "🚨 Outlier Analysis":
                   edgecolor="none", labelcolor="#cbd5e1")
         ax.set_xlabel("PC1", color="#64748b"); ax.set_ylabel("PC2", color="#64748b")
         ax.tick_params(colors="#475569")
-        for spine in ax.spines.values(): spine.set_edgecolor("rgba(99,102,241,0.1)")
+        for spine in ax.spines.values(): spine.set_edgecolor((0.388, 0.400, 0.945, 0.1))
         ax.set_title("Outliers in PCA Space", color="#e2e8f0", fontsize=11, fontweight="bold")
         fig.tight_layout()
         st.pyplot(fig); plt.close()
@@ -731,7 +731,7 @@ elif page == "🚨 Outlier Analysis":
         ax.set_title("Outliers per Cluster", color="#e2e8f0", fontsize=11, fontweight="bold")
         ax.set_ylabel("Count", color="#64748b")
         ax.tick_params(colors="#475569")
-        for spine in ax.spines.values(): spine.set_edgecolor("rgba(99,102,241,0.1)")
+        for spine in ax.spines.values(): spine.set_edgecolor((0.388, 0.400, 0.945, 0.1))
         fig.tight_layout()
         st.pyplot(fig); plt.close()
 
