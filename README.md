@@ -2,6 +2,13 @@
 
 > **Venture Creed** is a leading retailer of Casino gaming machines specializing in selling/leasing different classes of Casino machines across North America and LATAM.
 
+## 🔗 Live Dashboards
+
+| Tool | Link | Description |
+|------|------|-------------|
+| 🎛️ **Streamlit** | [venture-creed.streamlit.app](https://venture-creed.streamlit.app/) | Interactive ML app — 7 pages, PCA explorer, radar charts, outlier analysis |
+| 📊 **Tableau** | [Tableau Public Dashboard](https://public.tableau.com/views/Venture-Creed-Customer-Segmentation/Dashboard1) | BI dashboard — cluster KPIs, feature heatmap, PCA scatter |
+
 ---
 
 ## 📌 Project Overview
